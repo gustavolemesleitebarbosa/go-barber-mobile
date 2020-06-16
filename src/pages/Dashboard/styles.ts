@@ -29,7 +29,10 @@ export const UserName = styled.Text`
   font-family: 'RobotoSlab-Medium';
 `;
 
-export const ProfileButton = styled.TouchableOpacity``;
+export const ProfileButton = styled.TouchableOpacity`
+  min-height: 30px;
+  min-width: 30px;
+`;
 
 export const UserAvatar = styled.Image`
   width: 56px;

@@ -61,7 +61,7 @@ const Dashboard: React.FC = () => {
           Bem vindo, {'\n'} <UserName>{user.name}</UserName>{' '}
         </HeaderTitle>
         <ProfileButton onPress={navigateToProfile}>
-          <UserAvatar source={{ uri: user.avatar_url }} />
+          {user.avatar_url && <UserAvatar source={{ uri: user.avatar_url }} />}
         </ProfileButton>
       </Header>
       <ProvidersList
